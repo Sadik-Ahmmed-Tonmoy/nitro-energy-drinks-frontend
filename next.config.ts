@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
@@ -14,7 +15,7 @@ const nextConfig = {
         protocol: "http",
         hostname: "localhost",
         port: "5000",
-      }
+      },
     ],
   },
 };

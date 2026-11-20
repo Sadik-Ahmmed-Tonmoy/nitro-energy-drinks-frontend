@@ -156,7 +156,7 @@ export default function Hero() {
       {/* bottom bar */}
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: EASE, delay: 0.7 }}
         className="relative z-20 mx-auto grid w-full max-w-[1600px] items-center gap-6 px-5 pb-8 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:px-16 lg:pb-12">
-        <p className="max-w-[420px] text-sm uppercase leading-[150%] text-white/90 sm:text-base">
+        <p className="max-w-[450px] text-sm uppercase leading-[150%] text-white/90 sm:text-base">
           Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac.
         </p>
         <div className="flex gap-4 lg:justify-self-center">

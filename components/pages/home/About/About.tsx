@@ -34,6 +34,9 @@ export default function About() {
           <motion.div style={{ x: canX, rotate: canRot }} className="absolute left-[11.297%] top-[27.201%] z-10 w-[76.695%]">
             <RotatedCan src="/images/green-can.webp" alt="Nitro Green can" />
           </motion.div>
+ {/* super-light dark overlay behind the right-side text for readability */}
+          <div aria-hidden className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[42%]"
+            style={{ background: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 35%, rgba(0,0,0,0.32) 100%)" }} />
           <h2 className="display absolute left-[66%] top-[15.41%] z-20 font-normal text-[#E0E600]"
             style={{ fontSize: "9cqw", lineHeight: "0.757em", letterSpacing: "-0.03em" }}>
             {LINES_LG.map((l, n) => (
@@ -43,7 +46,7 @@ export default function About() {
               </span>
             ))}
           </h2>
-        </div>
+        </div>        
       </div>
 
       {/* ── Mobile / tablet: unchanged ── */}
@@ -65,8 +68,8 @@ export default function About() {
           </div>
 
 
-<h2 className="display absolute left-[66%] bottom-[1.41%] z-20 font-normal text-[#E0E600]"
-            style={{ fontSize: "9cqw", lineHeight: "0.757em", letterSpacing: "-0.03em" }}>
+          <h2 className="display absolute left-[66%] bottom-[1.41%] z-20 font-normal text-[#E0E600]"
+            style={{ fontSize: "9cqw", lineHeight: "0.757em", letterSpacing: "-0.03em", textShadow: "0 0 40px rgba(0,0,0,0.55), 0 2px 12px rgba(0,0,0,0.4)" }}>
             {LINES_LG.map((l, n) => (
               <span key={l} className="-my-[0.25em] block overflow-hidden py-[0.25em] pr-[0.15em]" style={{ height: "calc(0.757em + 0.5em)" }}>
                 <motion.span className="block" initial={{ y: "30%" }} whileInView={{ y: 0 }} viewport={{ once: false, margin: "-20%" }}
@@ -74,7 +77,7 @@ export default function About() {
               </span>
             ))}
           </h2>
-          
+
         </div>
       </div>
     </section>
