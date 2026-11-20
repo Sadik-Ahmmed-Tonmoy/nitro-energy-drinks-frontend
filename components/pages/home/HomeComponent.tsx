@@ -1,16 +1,11 @@
-import React from "react";
-import Banner from "./Banner/Banner";
-import LoginWithGoogle from "@/components/LoginWithGoogle";
-import Example from "./Example/Example";
 import { Container } from "@/components/ui-library/container";
+import Hero from "./Hero/Hero";
 
 const HomeComponent = () => {
   return (
-    <Container >
-      <Banner />
-      <Example />
-      <LoginWithGoogle />
-    </Container> 
+    <>
+      <Hero />
+    </>
   );
 };
 

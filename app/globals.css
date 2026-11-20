@@ -5,6 +5,42 @@
 /* 2. Enable Class-Based Dark Mode */
 @variant dark (&:where(.dark, .dark *));
 
+@import "tailwindcss";
+
+@property --accent { syntax: "<color>"; inherits: true; initial-value: #e0e600; }
+
+@theme inline {
+  --font-sans: var(--font-outfit), system-ui, sans-serif;
+  --font-display: var(--font-sakana), "Russo One", system-ui, sans-serif;
+  --color-ink: #050505;
+  --color-accent: var(--accent);
+}
+
+:root { --accent: #e0e600; --ease: cubic-bezier(0.22, 1, 0.36, 1); }
+html { scroll-behavior: smooth; background: #050505; transition: --accent 0.9s var(--ease); }
+body { background: #050505; color: #fff; font-family: var(--font-sans); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+section[id] { scroll-margin-top: 0; }
+
+/* Accent drives every themed surface and animates smoothly between flavours */
+.themed { transition: --accent 0.9s var(--ease); }
+.accent-text {
+  background: radial-gradient(50% 50% at 54% 68%, color-mix(in oklab, var(--accent) 45%, #000) 0%, var(--accent) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.display { font-family: var(--font-display); font-style: italic; letter-spacing: -0.03em; text-transform: uppercase; }
+.btn { display: inline-flex; align-items: center; justify-content: center; height: 44px; padding: 0 45px; font-weight: 500; font-size: 16px; line-height: 1.5; white-space: nowrap; transition: transform 0.35s var(--ease), background 0.35s, color 0.35s; }
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0) scale(0.98); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.no-scrollbar { scrollbar-width: none; } .no-scrollbar::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+
 /* 3. System Design Tokens (CSS Variables) */
 :root {
   --background: #ffffff;
