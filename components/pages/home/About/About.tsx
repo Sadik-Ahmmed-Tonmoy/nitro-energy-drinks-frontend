@@ -36,7 +36,7 @@ export default function About() {
           </motion.div>
  {/* super-light dark overlay behind the right-side text for readability */}
           <div aria-hidden className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[42%]"
-            style={{ background: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 35%, rgba(0,0,0,0.32) 100%)" }} />
+            style={{ background: "linear-gradient(to right, transparent 0%, rgba(0,0,0,5.18) 35%, rgba(0,0,0,0.32) 100%)" }} />
           <h2 className="display absolute left-[66%] top-[15.41%] z-20 font-normal text-[#E0E600]"
             style={{ fontSize: "9cqw", lineHeight: "0.757em", letterSpacing: "-0.03em" }}>
             {LINES_LG.map((l, n) => (

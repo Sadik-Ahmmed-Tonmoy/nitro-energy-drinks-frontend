@@ -36,7 +36,8 @@ export default function Header() {
       initial={{ y: -80, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
       style={{
-        "--accent": accent,
+        "--accent": "#e0e600",
+        // "--accent": accent,
         transitionProperty: "background, backdrop-filter, --accent",
         transitionDuration: "500ms, 500ms, 900ms",
         transitionTimingFunction: "ease, ease, cubic-bezier(0.22, 1, 0.36, 1)",
