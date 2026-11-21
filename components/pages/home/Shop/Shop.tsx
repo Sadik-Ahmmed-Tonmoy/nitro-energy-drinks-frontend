@@ -11,7 +11,7 @@ import { setSectionAccent } from "@/lib/accent";
 const ORDER = ["gold", "red", "green", "sky", "blue"];
 const SCALE = [1, 0.78, 0.66]; // by distance from the centre slot
 const LIFT = [0, -28, -28]; // side cans sit a little higher, like the design
-const AUTOPLAY = 5; // seconds per flavour
+const AUTOPLAY = 4; // seconds per flavour
 const START = 2; // Nitro Green starts in the middle
 const N = ORDER.length;
 

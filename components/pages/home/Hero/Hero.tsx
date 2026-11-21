@@ -8,7 +8,7 @@ import { setSectionAccent } from "@/lib/accent";
 import RotatedCan from "@/components/helper/RotatedCan";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
-const AUTOPLAY = 6;
+const AUTOPLAY = 4;
 
 const N = FLAVORS.length;
 const STEP = 280; // px between neighbouring cans while gliding
