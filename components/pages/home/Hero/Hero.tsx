@@ -102,7 +102,7 @@ export default function Hero() {
 
       {/* stage */}
       <motion.div onPanStart={onPanStart} onPan={onPan} onPanEnd={onPanEnd}
-        className={`relative z-10 mt-[72px] min-h-[380px] flex-1 touch-pan-y lg:mt-[80px] ${grabbing ? "cursor-grabbing" : "cursor-grab"}`}>
+        className={`relative z-10 mt-[72px] min-h-[190px] flex-1 touch-pan-y lg:mt-[80px] ${grabbing ? "cursor-grabbing" : "cursor-grab"}`}>
         <motion.h1 aria-label="Nitro" style={{ x: txtX }}
           initial={{ opacity: 0, scale: 0.94, y: 40, letterSpacing: "0.06em" }}
           animate={{ opacity: 1, scale: 1, y: 0, letterSpacing: "-0.03em" }}
@@ -156,7 +156,7 @@ export default function Hero() {
       {/* bottom bar */}
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: EASE, delay: 0.7 }}
         className="relative z-20 mx-auto grid w-full max-w-[1600px] items-center gap-6 px-5 pb-8 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:px-16 lg:pb-12">
-        <p className="max-w-[450px] text-sm uppercase leading-[150%] text-white/90 sm:text-base">
+        <p className="max-w-[460px] text-sm uppercase leading-[150%] text-white/90 sm:text-base">
           Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac.
         </p>
         <div className="flex gap-4 lg:justify-self-center">

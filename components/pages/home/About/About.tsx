@@ -63,7 +63,7 @@ export default function About() {
               <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
             </motion.div>
             <motion.div style={{ x: canX, rotate: canRot }} className="absolute right-0 top-1/2 z-10 w-[88%] -translate-y-1/2 sm:w-[82%]">
-              <RotatedCan src="/images/can-green.webp" alt="Nitro Green can" />
+              <RotatedCan src="/images/green-can.webp" alt="Nitro Green can" />
             </motion.div>
           </div>
 
