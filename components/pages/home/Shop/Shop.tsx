@@ -162,7 +162,7 @@ export default function Shop() {
   };
 
   return (
-    <section id="shop" className="relative overflow-hidden py-24 lg:py-14">
+    <section id="shop" className="relative overflow-hidden py-10 md:py-24 lg:py-14">
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_55%,#171717_0%,#050505_80%)]" />
       <h2 className="sr-only">Shop Nitro flavours</h2>
 
